@@ -1,11 +1,13 @@
 # AWS_CICD_SETUP
 
 Terrafrom code is used to setup the CICD pipeline on AWS with AWS services like CodeCommit, CodeBuild, CodeDeploy and CodePipeline.
+This Terrafrom code will call the module `terraform-aws-codecommit-cicd` with several variables and setup the full AWS CodePipeline.
+
 
 There are quite a few variables that can be passed into the module. Here is a brief explanation of what each one does:
 
-repo_name: The name of our new Git repository.
-organization_name: The organization name provisioning the template.
+`repo_name`: The name of our new Git repository.
+`organization_name`: The organization name provisioning the template.
 repo_default_branch: The default branch of our Git repository.
 aws_region: The AWS region we want to provision our infrastructure in.
 char_delimiter: The delimiter to use for unique names.
