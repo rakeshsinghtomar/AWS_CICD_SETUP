@@ -29,9 +29,9 @@ module "codecommit-cicd" {
 There are quite a few variables that can be passed into the module. Here is a brief explanation of what each one does:
 
 
-`repo_name`: The name of our new Git repository.
-`organization_name`: The organization name provisioning the template.
-`repo_default_branch`: The default branch of our Git repository.
+`repo_name`: The name of our new Git repository.  
+`organization_name`: The organization name provisioning the template.  
+`repo_default_branch`: The default branch of our Git repository.  
 `aws_region`: The AWS region we want to provision our infrastructure in.
 `char_delimiter`: The delimiter to use for unique names.
 `environment`: What our development team calls this environment (i.e. dev v.s. prod).
